@@ -22,7 +22,7 @@ def fetch_top_anime():
     print("Fetching top 20000 anime to build local cache...")
     all_anime = []
     # CORRECTED: Fetches 40 pages to get 1000 anime
-    for page in range(1, 100): 
+    for page in range(1, 7): 
         try:
             response = requests.get(f"https://api.jikan.moe/v4/top/anime?page={page}")
             response.raise_for_status()
